@@ -155,7 +155,9 @@ background: var(--background-secondary) !important;
 .chat-3bRxxu {
   background: var(--chat-background);
 }
-
+.scroller-2LSbBU {
+overflow: hidden overlay !important;
+}
 /* Unread messages divider */
 .group-spacing-16 .divider-3_HH5L {
    margin: 10px 0 10px 0;
@@ -163,8 +165,13 @@ background: var(--background-secondary) !important;
      position: unset;
      width: 100%;
    }
-   .unreadPillCap-3_K2q2 {
+   .unreadPillCap-3_K2q2, .content-1o0f9g {
      display: none;
+   }
+   .content-1o0f9g:only-child {
+     display: unset;
+     padding: 4px 8px;
+     color: #fff;
    }
 }
 
