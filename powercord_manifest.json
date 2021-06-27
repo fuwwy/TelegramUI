@@ -1,0 +1,8 @@
+{
+    "name": "TelegramUI",
+    "version": "1.0.0",
+    "author": "Checkium",
+    "description": "A theme for Discord inspired by the Telegram UI",
+    "license": "MIT",
+    "theme": "theme.scss"
+}

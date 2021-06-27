@@ -1,0 +1,132 @@
+.theme-dark {
+     --guild-list-background: #0e1621;
+     --background-tertiary: #242f3d;
+     --background-secondary: #17212b;
+     --unread-message: #3e546a;
+     --mention-color: hsl(208, calc(var(--saturation-factor, 1) * 49%), 59.4%);
+     --background-modifier-selected-guild: #2b5278;
+    --unread-message-selected: #7aa3ca;
+    --unread-selected-text: #2a5378;
+    --mention-color-selected: #ffffff;
+    --folder-background-color: #0e1621;
+    --background-modifier-selected: #2b5278;
+    --channels-default: #7f91a4;
+    --text-muted: #7f91a4;
+}
+
+/* Guild List */
+.mention-1f5kbO {
+    background-color: var(--mention-color) !important;
+}
+.wrapper-25eVIn foreignObject {
+  mask: url(#svg-mask-avatar-default);
+}
+.guilds-1SWlCJ {
+  width: 65px;
+}
+.scroller-1Bvpku {
+  padding-top: 0;
+  width: 65px;
+  background-color: var(--guild-list-background);
+}
+.scroller-1Bvpku > .listItem-GuPuDH {
+    margin: 8px 0 8px;
+    width: unset;
+}
+.scroller-1Bvpku div .listItem-GuPuDH {
+  height: 65px;
+  width: 65px;
+  margin: 0;
+  padding: 0;
+  &.selected {
+    background: var(--background-modifier-selected-guild);
+    .numberBadge-2s8kKX {
+       color: var(--unread-selected-text);
+       background-color: var(--mention-color-selected) !important;
+    }
+  }
+  &:not(.selected) {
+    .numberBadge-2s8kKX {
+        background-color: var(--mention-color) !important;
+      }
+  }
+  &:hover:not(.selected) {
+    background: var(--background-modifier-hover);
+  }
+  .listItemWrapper-KhRmzM,
+  div:not([class]) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &.unread:not(.mentioned) .wrapper-1BJsBx:after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: var(--unread-message-selected);
+  }
+  &.unread:not(.mentioned):not(.selected) .wrapper-1BJsBx:after {
+    background-color: var(--unread-message);
+  }
+  .pill-1z4sAY, .pill-1Z5PKm {
+    display: none;
+  }
+  .blobContainer-pmnxKB,
+  .wrapper-25eVIn {
+    width: 65px;
+    height: 65px;
+    .lowerBadge-29hYVK {
+      right: 8.5px;
+      bottom: 8.5px;
+    }
+  }
+  .wrapper-25eVIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    svg {
+      position: unset;
+    }
+  }
+}
+/* DM Fix */
+.scroller-1Bvpku div:not([class]) {
+    height: unset;
+}
+.pill-3N7f9r {
+    top: 8.5px;
+}
+/*Folders*/
+[id^="folder-items-"] {
+  height: unset !important;
+}
+.expandedFolderBackground-1cujaW {
+    top: 5px;
+    left: 6px;
+    bottom: 5px;
+    width: 53px;
+    border-radius: 30px;
+    background-color: var(--folder-background-color);
+}
+.folder-1hbNCn {
+    background-color: var(--folder-background-color);
+}
+
+/* Channel List */
+.scroller-RmtA4e {
+  overflow: hidden overlay !important;
+  .content-1x5b-n {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+/* User area */
+.panels-j1Uci_ {
+    background-color: var(--guild-list-background);
+}
