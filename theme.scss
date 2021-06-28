@@ -13,7 +13,7 @@
   --background-modifier-selected: #2b5278;
   --channels-default: #7f91a4;
   --text-muted: #7f91a4;
-  --separator: 0.5px solid rgba(4, 4, 5, 0.3);
+  --separator: 1px solid rgba(0, 0, 0, 0.3);
   --chat-background: #0E1621;
 }
 
@@ -139,7 +139,8 @@
 }
 /* User area */
 .panels-j1Uci_ {
-  background-color: var(--guild-list-background);
+    border-top: var(--separator);
+  background-color: var(--background-secondary);
 }
 
 /* Chat */
@@ -189,6 +190,7 @@ bottom: 55px;
 }
 .scrollableContainer-2NUZem {
   border-radius: 0;
+  background-color: var(--background-secondary);
   .textArea-12jD-V, .buttons-3JBrkn, .attachButton-2WznTc {
     height: 52px;
   }
