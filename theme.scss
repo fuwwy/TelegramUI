@@ -1,3 +1,4 @@
+@use "teardropmessages.css";
 .theme-dark {
   --guild-list-background: #0e1621;
   --background-tertiary: #242f3d;
@@ -16,6 +17,7 @@
   --separator: 1px solid rgba(0, 0, 0, 0.3);
   --chat-background: #0E1621;
   --background-primary: var(--chat-background);
+  --message-in-background: #182533;
 }
 
 /* Guild List */
@@ -150,6 +152,7 @@ background: var(--background-secondary) !important;
 }
 .title-3qD0b- {
   border-bottom: var(--separator);
+  z-index: unset;
 }
 .content-yTz4x3:before {
   box-shadow: none;
@@ -176,6 +179,48 @@ overflow: hidden overlay !important;
      color: #fff;
    }
 }
+/* Jump to present */
+.jumpToPresentBar-G1R9s6 {
+  padding: 0;
+  border-radius: 50px;
+  left: unset;
+  height: 45px;
+  width: 45px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  right: 25px;
+  bottom: 45px;	
+animation-duration: .3s;
+  animation-name: slidein;
+ animation-fill-mode: forwards;
+  .spinner-2enMB9 {
+    padding: 0;
+  }
+  .barButtonMain-3K-jeJ {
+    display: none;
+  }
+  .barButtonAlt-mYL1lj {
+    font-size: 0px;
+    padding: 0;
+    width: 40px;
+    height: 40px;	
+  }
+  .barButtonIcon-3t4V3d {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+  }
+}
+@keyframes slidein {
+  from {
+    bottom: -50px;
+  }
+
+  to {
+    bottom: 45px;	
+  }
+}
 
 /* Message box */
 .form-2fGMdU {
@@ -185,6 +230,7 @@ overflow: hidden overlay !important;
 }
 .base-gE7OpD {
  top: -25px;
+ /*top: calc(calc(100vh - 97px) * -1);*/
 }
 .applicationCommandEducation-2jAJ0B {
  display: none;
@@ -221,7 +267,10 @@ overflow: hidden overlay !important;
   background: var(--chat-background) !important;
 }
 .peopleList-3c4jOR {
-  overflow: hidden overlay !important	;
+  overflow: hidden hidden !important;
+  &:hover {
+    overflow: hidden overlay !important;
+  }
 }
 .peopleListItem-2nzedh, .peopleListItem-2nzedh:hover {
   margin-right: 0;
