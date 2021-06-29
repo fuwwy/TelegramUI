@@ -15,6 +15,7 @@
   --text-muted: #7f91a4;
   --separator: 1px solid rgba(0, 0, 0, 0.3);
   --chat-background: #0E1621;
+  --background-primary: var(--chat-background);
 }
 
 /* Guild List */
@@ -212,4 +213,22 @@ bottom: 55px;
     border-radius: 0;
     max-width: unset;
   }
+}
+.container-1D34oG {
+  background: var(--chat-background) !important;
+}
+.peopleList-3c4jOR {
+  overflow: hidden overlay !important	;
+}
+.peopleListItem-2nzedh, .peopleListItem-2nzedh:hover {
+  margin-right: 0;
+  margin-left: 0;
+  border-radius: 0;
+  padding: 0;
+  .listItemContents-95HL3L {
+     padding: 0 20px;
+  }
+}
+.title-30qZAO {
+  margin-left: 20px;
 }
